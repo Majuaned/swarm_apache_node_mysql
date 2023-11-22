@@ -1,0 +1,6 @@
+ docker build -t mysql .
+ docker build -t apache .
+ docker build -t serverjs .
+
+docker stack deploy -c swarm.yml servicios-swarm-node-apache
+
